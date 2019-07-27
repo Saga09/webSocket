@@ -2,6 +2,18 @@ import React from 'react';
 
 
 class Header extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            searchVal: ""
+        }
+    }
+
+    handelSearch(e){
+        this.setState({
+            searchVal: e
+        })
+    }
     render()
     {
         return (
@@ -22,11 +34,11 @@ class Header extends React.Component {
                                 <li><a href="#">Coupons</a></li>
                                 <li><a href="#">Tips</a></li>
                                 <li><a href="#">Contest</a></li>
-                                <li>
-                                    <input type="text" placeholder="Search for discounts"/>
+                                <li className="">
+                                    <input type="text" value={this.state.searchVal} onChange={(e) => this.handelSearch(e.target.value)} placeholder="Search for discounts"/>
+                                    <a href="#">Search</a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
