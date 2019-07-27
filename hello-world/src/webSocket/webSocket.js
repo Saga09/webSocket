@@ -1,7 +1,4 @@
 import React from 'react';
-import '../App.css';
-
-
 const dummy = [
     {'name': 'Apple', 'price': '100'},
     {'name': 'One Plus', 'price': '80'},
