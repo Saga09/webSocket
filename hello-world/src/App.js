@@ -22,24 +22,9 @@ class App extends React.Component {
             price: '',
             date: ''
         };
-        this.getDataTable = this.getDataTable.bind(this);
+
     }
 
-    getDataTable()
-    {
-        let dataTableXML = [];
-        for (let i in dummy){
-            dataTableXML.push(
-                <tr key={i}>
-                    <td>{dummy[i].name}</td>
-                    <td>{dummy[i].price}</td>
-                    <td>Time</td>
-                </tr>
-            )
-        }
-        return dataTableXML;
-        console.log('dataTableXML', dataTableXML)
-    }
     render()
     {
         return (

@@ -1,34 +1,27 @@
 import React from 'react';
-const dummy = [
-    {'name': 'Apple', 'price': '100'},
-    {'name': 'One Plus', 'price': '80'},
-    {'name': 'Samsung', 'price': '60'},
-    {'name': 'MI', 'price': '50'},
-];
-
+import Websocket from 'react-websocket';
 
 class WebSocket extends React.Component {
     constructor(props)
     {
         super(props);
         this.state = {
-            name: '',
-            price: '',
-            date: ''
+            data : []
         };
         this.getDataTable = this.getDataTable.bind(this);
     }
 
     getDataTable()
     {
+        let data = this.state.data;
         let dataTableXML = [];
-        for (let i in dummy)
+        for (let i in data)
         {
             dataTableXML.push(
                 <tr key={i}>
-                    <td>{dummy[i].name}</td>
-                    <td>{dummy[i].price}</td>
-                    <td>Time</td>
+                    <td>{data[i].name}</td>
+                    <td>{data[i].price}</td>
+                    <td>{data[i].time}</td>
                 </tr>
             )
         }
@@ -36,10 +29,44 @@ class WebSocket extends React.Component {
         console.log('dataTableXML', dataTableXML)
     }
 
+    handleData(data)
+    {
+        let dataFormatted = [];
+        let previousData = this.state.data;
+        data = JSON.parse(data);
+        let today = new Date();
+        let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        let dateTime = date+' '+time;
+        for(let i in data)
+        {
+            if(previousData[data[i][0]] == undefined)
+            {
+                previousData[data[i][0]] = {name: data[i][0], price: data[i][1], color :'', time: dateTime };
+            }
+            else
+            {
+                let color = '';
+                let keyData =  previousData[data[i][0]];
+                if(keyData.price > data[i][1])
+                {
+                    color = 'red';
+                }
+                else
+                {
+                    color = 'green';
+                }
+                previousData[data[i][0]] = {name: data[i][0], price: data[i][1], color :color, time: dateTime};
+            }
+        }
+        this.setState({data : previousData});
+    }
     render()
     {
         return (
             <div className="App">
+                <Websocket url='ws://stocks.mnet.website/'
+                           onMessage={this.handleData.bind(this)}/>
                 <table id="customers">
                     <tbody>
                     <tr>
@@ -58,4 +85,3 @@ class WebSocket extends React.Component {
 
 
 export default WebSocket;
-

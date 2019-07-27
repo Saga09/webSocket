@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header'
+import Filter    from './filter'
 
 
 
@@ -11,6 +12,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <Header />
+                <Filter />
             </div>
         )
     }
