@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#home{width:100%;height:100vh;background:#136690;position:relative}
+.top-nav .logo{float:left}
+.logo img{margin-top:-8px}
+.top-nav{position:fixed;top:0;z-index:999;width:100%;left:0;height:55px;-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.25);-moz-box-shadow:0 1px 5px rgba(0,0,0,0.25);box-shadow:0 1px 5px rgba(0,0,0,0.25);-webkit-transition:all .15s ease-out .15s;-moz-transition:all .15s ease-out .15s;-o-transition:all .15s ease-out .15s;transition:all .15s ease-out .15s;-webkit-transition:all .15s ease-in .15s;-moz-transition:all .15s ease-in .15s;-o-transition:all .15s ease-in .15s;transition:all .15s ease-in .15s}
+.transparent{box-shadow:none}
+.top-nav{padding:15px 0 0}
+.top-nav .navigation{float:right}
+.navigation button{margin:0}
+.navbar-toggle .icon-bar{background-color:#fff;background-color:#fff}
+.navMenu{float:right;}
+.navMenu ul {float: left}
+.navMenu ul li{display:inline-block}
+.navMenu ul li a{color: #3c3a3a;padding:0 10px;font-size:16px;text-transform: uppercase;display: inline-block;}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}

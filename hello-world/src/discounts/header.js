@@ -18,17 +18,15 @@ class Header extends React.Component {
                         </div>
                         <div className="navMenu">
                             <ul className="mainMenu">
-                                <li><a href="https://www.chtrbox.com">Chtrbox</a></li>
-                                <li><a href="https://www.chtrbox.com/brands">Brands &amp; Agencies</a></li>
+                                <li><a href="#">Deals</a></li>
+                                <li><a href="#">Coupons</a></li>
+                                <li><a href="#">Tips</a></li>
+                                <li><a href="#">Contest</a></li>
+                                <li>
+                                    <input type="text" placeholder="Search for discounts"/>
+                                </li>
                             </ul>
-                            <div className="menuButton">
-                                <ul>
-                                    <li className="singUp"><a href="#logInModal"
-                                                              className="logInModal signUpClick logInClick"
-                                                              data-toggle="modal" data-target="#exampleModal">Become a
-                                        Shoutie Star!</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>
