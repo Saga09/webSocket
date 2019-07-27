@@ -1,10 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-import {HashRouter, Route, Switch, Redirect} from 'react-router-dom';
-import HomePage from './discounts/homePage'
-import WebSocket from './webSocket/webSocket'
+import '../App.css';
 
 
 const dummy = [
@@ -15,7 +10,7 @@ const dummy = [
 ];
 
 
-class App extends React.Component {
+class WebSocket extends React.Component {
     constructor(props)
     {
         super(props);
@@ -30,7 +25,8 @@ class App extends React.Component {
     getDataTable()
     {
         let dataTableXML = [];
-        for (let i in dummy){
+        for (let i in dummy)
+        {
             dataTableXML.push(
                 <tr key={i}>
                     <td>{dummy[i].name}</td>
@@ -42,24 +38,27 @@ class App extends React.Component {
         return dataTableXML;
         console.log('dataTableXML', dataTableXML)
     }
+
     render()
     {
         return (
             <div className="App">
-                <div>
-                    <HashRouter>
-                        <Switch>
-                            <Route path="/home" component={HomePage}/>
-                            <Route path="/webSocket" component={WebSocket}/>
-                            <Redirect to="/home"/>
-                        </Switch>
-                    </HashRouter>
-                </div>
+                <table id="customers">
+                    <tbody>
+                    <tr>
+                        <th>Script Name</th>
+                        <th>Price</th>
+                        <th>Last Update</th>
+                    </tr>
+                    {this.getDataTable()}
+                    </tbody>
+                </table>
             </div>
+
         )
     }
 }
 
 
-export default App;
+export default WebSocket;
 
