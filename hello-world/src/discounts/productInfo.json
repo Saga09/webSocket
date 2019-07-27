@@ -1,0 +1,35 @@
+{
+  "popularCouponCategories": [
+    {"imgName" : "diaper.png", "name": "Diaper"},
+    {"imgName" : "milk.png", "name": "Milk"},
+    {"imgName" : "coffee.png", "name": "Coffee"},
+    {"imgName" : "shampoo.png", "name": "Shampoo"},
+    {"imgName" : "cheese.png", "name": "Cheese"},
+    {"imgName" : "bread.png", "name": "Bread"},
+    {"imgName" : "dog.png", "name": "Dog"},
+    {"imgName" : "yogurt.png", "name": "Yogurt"},
+    {"imgName" : "diaper.png", "name": "Diaper"},
+    {"imgName" : "milk.png", "name": "Milk"},
+    {"imgName" : "coffee.png", "name": "Coffee"},
+    {"imgName" : "shampoo.png", "name": "Shampoo"},
+    {"imgName" : "cheese.png", "name": "Cheese"},
+    {"imgName" : "bread.png", "name": "Bread"},
+    {"imgName" : "dog.png", "name": "Dog"},
+    {"imgName" : "yogurt.png", "name": "Yogurt"}
+  ],
+
+  "brand": [
+    {"imgName" : "diaper.png", "name": "Diaper"},
+    {"imgName" : "milk.png", "name": "Milk"},
+    {"imgName" : "coffee.png", "name": "Coffee"},
+    {"imgName" : "shampoo.png", "name": "Shampoo"},
+    {"imgName" : "cheese.png", "name": "Cheese"},
+    {"imgName" : "bread.png", "name": "Bread"},
+    {"imgName" : "dog.png", "name": "Dog"},
+    {"imgName" : "yogurt.png", "name": "Yogurt"},
+    {"imgName" : "diaper.png", "name": "Diaper"},
+    {"imgName" : "milk.png", "name": "Milk"},
+    {"imgName" : "coffee.png", "name": "Coffee"},
+    {"imgName" : "shampoo.png", "name": "Shampoo"}
+  ]
+}

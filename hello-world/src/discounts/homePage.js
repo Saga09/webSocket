@@ -1,18 +1,19 @@
 import React from 'react';
 import Header from './header'
-import Filter    from './filter'
-
-
-
+import Filter from './filter'
+import Home from './home'
+import Products from './product'
 
 
 class HomePage extends React.Component {
-   render()
+    render()
     {
         return (
             <div>
-                <Header />
-                <Filter />
+                <Header/>
+                <Filter/>
+                <Home/>
+                <Products />
             </div>
         )
     }

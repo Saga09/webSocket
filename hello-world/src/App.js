@@ -5,13 +5,6 @@ import HomePage from './discounts/homePage'
 import WebSocket from './webSocket/webSocket'
 
 
-const dummy = [
-    {'name': 'Apple', 'price': '100'},
-    {'name': 'One Plus', 'price': '80'},
-    {'name': 'Samsung', 'price': '60'},
-    {'name': 'MI', 'price': '50'},
-];
-
 
 class App extends React.Component {
     constructor(props)
