@@ -32,7 +32,7 @@ class Home extends React.Component {
                             <span className="input-group-btn">Find Coupons</span>
                         </div>
                         <div className="scrollDown">
-                            <a href="#product--wrapper" className="pageScroll">
+                            <a href="JavaScript:void(0);" className="pageScroll">
                                 <img src="../assets/img/ico-mouse-down.svg" id="arrow" alt="arrow" className="pulse" />
                             </a>
                         </div>
