@@ -87,4 +87,52 @@ $(document).ready(function () {
     owlCarousel()
     vegas_call(2000);
     searchBar();
+
+
+
+    get_height();
+    set_height();
+
+    // Hide Header on on scroll down
+    let didScroll;
+    let lastScrollTop = 0;
+    let delta = 5;
+    let navbarHeight = $('.filters').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        let st = $(this).scrollTop();
+        let filterHeight = $('.filters').outerHeight();
+
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            console.log('333');
+            $('.filterWrapper').css('top', '-'+filterHeight + 'px');
+            $('.filters').css('top', '-70px');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                console.log('44');
+                $('.filters').css('top', '70px');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+
 });

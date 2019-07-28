@@ -31,7 +31,8 @@ class WebSocket extends React.Component {
                 <tr key={i}>
                     <td>{count}</td>
                     <td>{data[i].name}</td>
-                    <td className={data[i].color}>{priceCount} <strong>({differenceCount})</strong></td>
+                    <td>{priceCount} </td>
+                    <td className={data[i].color}><strong>{differenceCount}</strong></td>
                     <td>{data[i].time}</td>
                 </tr>
             )
@@ -91,6 +92,7 @@ class WebSocket extends React.Component {
                                 <th>#</th>
                                 <th>Company Name</th>
                                 <th>Price</th>
+                                <th>Status</th>
                                 <th>Last Update</th>
                             </tr>
                             {this.getDataTable()}

@@ -11,14 +11,14 @@ class ProductDetail extends React.Component {
         for (let i in couponCategories)
         {
             couponCategoriesXML.push(
-                <div key={i} className="col-6 col-md-3">
+                <div key={i} className="col-6 col-sm-4 col-md-4 col-lg-3">
                     <div className="product--card">
                         <div className="row vertical-middle">
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-sm-6">
                                 <img src={"../assets/img/" + couponCategories[i].imgName} alt="Product Image"
                                      className="img-fluid"/>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-sm-6">
                                 <p>{couponCategories[i].name}</p>
                             </div>
                         </div>
@@ -36,14 +36,14 @@ class ProductDetail extends React.Component {
         for (let i in brand)
         {
             brandXML.push(
-                <div key={i} className="col-6 col-md-3">
+                <div key={i} className="col-6 col-sm-4 col-md-4 col-lg-3">
                     <div className="product--card">
                         <div className="row vertical-middle">
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-sm-6">
                                 <img src={"../assets/img/" + brand[i].imgName} alt="Product Image"
                                      className="img-fluid"/>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-sm-6">
                                 <p>{brand[i].name}</p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ class ProductDetail extends React.Component {
                         <h2>Popular Coupon Categories <img src="../assets/img/ico-heading-style.svg"
                                                            alt=""/></h2>
                         {this.getProductDetail(couponCategories)}
-                        <a href="#" className="load--more">Load More <img src="../assets/img/ico-expand.svg"/> </a>
+                        <a href="JavaScript:void(0);" className="load--more">Load More <img src="../assets/img/ico-expand.svg"/> </a>
                     </div>
                 </div>
                 <div className="product--detail">
@@ -74,7 +74,7 @@ class ProductDetail extends React.Component {
                         <h2>Popular Coupon Categories <img src="../assets/img/ico-heading-style.svg"
                                                            alt=""/></h2>
                         {this.getBrandDetail(brand)}
-                        <a href="#" className="load--more">Load More <img src="../assets/img/ico-expand.svg"/> </a>
+                        <a href="JavaScript:void(0);" className="load--more">Load More <img src="../assets/img/ico-expand.svg"/> </a>
                     </div>
                 </div>
             </div>

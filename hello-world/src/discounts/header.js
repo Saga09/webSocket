@@ -32,7 +32,7 @@ class Header extends React.Component {
                         <div className="navMenu">
                             <ul className="mainMenu">
                                 <li><a href="JavaScript:void(0);">Deals</a></li>
-                                <li><a href="JavaScript:void(0);">Coupons</a></li>
+                                <li className="active"><a href="JavaScript:void(0);">Coupons</a></li>
                                 <li><a href="JavaScript:void(0);">Tips</a></li>
                                 <li><a href="JavaScript:void(0);">Contest</a></li>
                                 <li className="search-bar">
