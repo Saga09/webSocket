@@ -40,12 +40,12 @@ class Header extends React.Component {
                                     <a href="JavaScript:void(0);">Search</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="JavaScript:void(0);">
                                         <img src="../assets/img/flash-offer.png" alt="logo" className="scrolling-logo" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="JavaScript:void(0);">
                                         <span>Menu</span>
                                         <img src="../assets/img/ico-menu.svg" alt="logo" className="scrolling-logo" />
                                     </a>
