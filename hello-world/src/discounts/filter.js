@@ -24,7 +24,7 @@ class Filter extends React.Component {
         for(let i in filterDetail){
             filtersXml.push(
                 <div key={i} className="item">
-                    <img src={'../assets/img/'+filterDetail[i].imgSrc} alt="filter-icon" className="img-fluid" />
+                    <img src={'./assets/img/'+filterDetail[i].imgSrc} alt="filter-icon" className="img-fluid" />
                     <p>{filterDetail[i].name}</p>
                 </div>
             )

@@ -22,7 +22,7 @@ class Header extends React.Component {
                     <div className="container">
                         <div className="logo">
                             <a href="JavaScript:void(0);" className="pageScroll">
-                                <img src="../assets/img/logo.png" alt="logo" className="img-fluid" />
+                                <img src="./assets/img/logo.png" alt="logo" className="img-fluid" />
                             </a>
                         </div>
                         <div className="navigation">
@@ -41,13 +41,13 @@ class Header extends React.Component {
                                 </li>
                                 <li>
                                     <a href="JavaScript:void(0);">
-                                        <img src="../assets/img/flash-offer.png" alt="logo" className="scrolling-logo" />
+                                        <img src="./assets/img/flash-offer.png" alt="logo" className="scrolling-logo" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="JavaScript:void(0);">
                                         <span>Menu</span>
-                                        <img src="../assets/img/ico-menu.svg" alt="logo" className="scrolling-logo" />
+                                        <img src="./assets/img/ico-menu.svg" alt="logo" className="scrolling-logo" />
                                     </a>
 
                                 </li>

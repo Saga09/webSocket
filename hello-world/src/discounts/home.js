@@ -7,8 +7,8 @@ class Home extends React.Component {
         return (
             // Right now i don't have Img for mobile version so i used same img in data-mob-img'
             <div id="home" className="vegas-parent responsive-vegas"
-                 data-img="../assets/img/header-img.png"
-                 data-mob-img="../assets/img/header-img.png">
+                 data-img="./assets/img/header-img.png"
+                 data-mob-img="./assets/img/header-img.png">
                 <div className="container">
                     <div className="home-text">
                         <h2>Cashback Offers + Discount Offers</h2>
@@ -33,7 +33,7 @@ class Home extends React.Component {
                         </div>
                         <div className="scrollDown">
                             <a href="JavaScript:void(0);" className="pageScroll">
-                                <img src="../assets/img/ico-mouse-down.svg" id="arrow" alt="arrow" className="pulse" />
+                                <img src="./assets/img/ico-mouse-down.svg" id="arrow" alt="arrow" className="pulse" />
                             </a>
                         </div>
                     </div>

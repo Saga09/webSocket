@@ -5,7 +5,7 @@ class AddOne extends React.Component{
     render(){
         return(
             <div className="advertisement--one">
-                <img src="../assets/img/5.png" className="img-fluid" alt=""/>
+                <img src="./assets/img/5.png" className="img-fluid" alt=""/>
                 <ul>
                     <p>Related Topics</p>
                     <li>New Zealand Vacation Packages</li>
@@ -21,15 +21,15 @@ class AddTwo extends React.Component{
         return(
             <div className="advertisement--two">
                 <div className="img-wrapper hover">
-                    <img src="../assets/img/1.png" className="img-fluid" alt=""/>
+                    <img src="./assets/img/1.png" className="img-fluid" alt=""/>
                     <p>BEACHES</p>
                 </div>
                 <div className="img-wrapper hover">
-                    <img src="../assets/img/2.png" className="img-fluid" alt=""/>
+                    <img src="./assets/img/2.png" className="img-fluid" alt=""/>
                     <p>BEACHES</p>
                 </div>
                 <div className="img-wrapper hover">
-                    <img src="../assets/img/3.png" className="img-fluid" alt=""/>
+                    <img src="./assets/img/3.png" className="img-fluid" alt=""/>
                     <p>BEACHES</p>
                 </div>
 
@@ -44,7 +44,7 @@ class Advertisement extends React.Component {
                 <AddOne />
                 <AddTwo />
                 <div className="advertisement--two">
-                    <img src="../assets/img/ad-img.png" className="img-fluid" alt=""/>
+                    <img src="./assets/img/ad-img.png" className="img-fluid" alt=""/>
                 </div>
             </div>
         )
