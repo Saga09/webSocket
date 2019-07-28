@@ -121,13 +121,13 @@ $(document).ready(function () {
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
-            console.log('333');
+
             $('.filterWrapper').css('top', '-'+filterHeight + 'px');
             $('.filters').css('top', '-70px');
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                console.log('44');
+
                 $('.filters').css('top', '70px');
             }
         }

@@ -38,7 +38,7 @@ class WebSocket extends React.Component {
             )
         }
         return dataTableXML;
-        console.log('dataTableXML', dataTableXML)
+
     }
 
     handleData(data)
